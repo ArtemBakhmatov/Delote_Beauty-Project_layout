@@ -1,0 +1,130 @@
+.ourWorks {
+    margin-top: 150px;
+    position: relative;
+    &__none {
+        display: none;
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 48px;
+        text-align: center;
+        color: var(--white);
+    }
+    &__items {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-top: 80px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    &__item {
+        color: var(--white);
+        font-weight: 400;
+        font-size: 24px;
+        margin: 0 30px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        border-bottom: 1px solid var(--black);
+        &:hover {
+            color: var(--light_brown);
+        }
+        &-active {
+            border-bottom: 1px solid var(--light_brown);
+            color: var(--light_brown);
+            padding-bottom: 5px;
+        }
+    }
+    &__tabContent {
+        margin-top: 170px;
+        //display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        &-img {
+            margin: 12px;
+        }
+    }
+}
+
+@media (max-width: 1399px) {
+    .ourWorks {
+        margin-top: 100px;
+        &__items {
+            margin-top: 60px;
+        }
+        &__tabContent {
+            margin-top: 155px;
+            &-img {
+                width: 355px;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .ourWorks {
+        margin-top: 80px;
+        &__title {
+            font-size: 45px;
+        }
+        &__tabContent {
+            &-img {
+                width: 308px;
+                margin: 5px;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .ourWorks {
+        &__title {
+            font-size: 40px;
+        }
+        &__items {
+            margin-top: 50px;
+        }
+        &__tabContent {
+            margin-top: 140px;
+            &-img {
+                width: 308px;
+                margin: 5px;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .ourWorks {
+        margin-top: 65px;
+        &__title {
+            font-size: 37px;
+        }
+        &__items {
+            flex-wrap: wrap;
+        }
+        &__tabContent {
+            &-img {
+                width: 259px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .ourWorks {
+        &__tabContent {
+            justify-content: center;
+        }
+    }
+}

@@ -1,0 +1,143 @@
+.prices {
+    &__none {
+        display: none;
+    }
+    &__title {
+        color: var(--white);
+        margin-top: 70px;
+        font-weight: 700;
+        font-size: 48px;
+        text-align: center;
+    }
+    &__flex {
+        margin-top: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__block {
+        border-bottom: 1px solid var(--light_brown);
+        &-flex {
+            margin-top: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        &-title {
+            font-weight: 700;
+            font-size: 27px;
+            color: var(--white);
+        }
+        &-price {
+            font-weight: 700;
+            font-size: 27px;
+            color: var(--white);
+        }
+        &-text {
+            margin-top: 10px;
+            margin-bottom: 20px;
+            font-weight: 400;
+            font-size: 18px;
+            color: var(--white);
+        }
+    }
+    &__content {
+        width: 526px;
+    }
+}
+
+@media (max-width: 1399px) {
+    .prices {
+        &__img {
+            width: 550px;
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .prices {
+        &__flex {
+            margin-top: 30px;
+        }
+        &__img {
+            width: 470px;
+            img {
+                width: 100%;
+            }
+        }
+        &__content {
+            width: 440px;
+        }
+        &__block {
+            &-text {
+                margin-top: 5px;
+                margin-bottom: 15px;
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .prices {
+        &__title {
+            margin-top: 50px;
+            font-size: 43px;
+        }
+        &__img {
+            width: 375px;
+        }
+        &__content {
+            width: 310px;
+        }
+        &__block {
+            &-title {
+                font-size: 24px;
+            }
+            &-price {
+                font-size: 23px;
+            }
+            &-text {
+                font-size: 16px;
+            }
+            &-flex {
+                margin-top: 20px;
+            }
+        
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .prices {
+        &__title {
+            margin-top: 40px;
+            font-size: 37px;
+        }
+        &__flex {
+            flex-direction: column;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .prices {
+        &__title {
+            margin-top: 130px;
+            font-size: 33px;
+        }
+    }
+}
+
+@media (max-width: 475px) {
+    .prices {
+        &__img {
+            width: 300px;
+        }
+        &__content {
+            width: 300px;
+        }
+    }
+}
